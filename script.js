@@ -47,3 +47,6 @@ console.log("--------------------");
 // Part 4: The Spread Operator
 let clonedStudent1 = { ...student1 };
 console.log(clonedStudent1);
+
+clonedStudent1.graduationYear = 2026;
+console.log(clonedStudent1);
