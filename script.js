@@ -27,3 +27,9 @@ let convertedJson = JSON.parse(jsonStudent1);
 console.log(convertedJson);
 // the converted JSON student and student1 are two different objects in the memory, hence the result would be false:
 console.log(convertedJson === student1);
+console.log(student1, convertedJson);
+
+// Using Destructuring Assignment
+let { name: studentName, courses: studentCourses } = student1;
+console.log(studentName);
+console.log(studentCourses);
