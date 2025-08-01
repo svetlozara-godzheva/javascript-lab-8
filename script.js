@@ -4,11 +4,14 @@ function Student(name, age, enrolled, courses) {
     this.age = age;
     this.enrolled = enrolled;
     this.courses = courses;
-    this.print = function () {
+    this.print = () => {
         console.log(`Student name: ${this.name}`);
         console.log(`Student age: ${this.age}`);
         console.log(`Is ${this.name} enrolled: ${this.enrolled}`);
         console.log(`The courses that ${this.name} enrolls in are ${this.courses}`);
+    };
+    this.addCourse = (course) => {
+        student1.courses.push(course);
     };
 }
 
@@ -54,3 +57,10 @@ console.log(clonedStudent1);
 let newCourses = ["Site Assessment", "Sampling", "Green Polices"]
 let allCourses = [...student1.courses, ...newCourses];
 console.log(allCourses);
+console.log("--------------------");
+
+
+// Part 5: Object Methods
+student1.addCourse("Environmental Law & Regulations");
+student1.addCourse("Construction Administration");
+console.log(student1.courses);
