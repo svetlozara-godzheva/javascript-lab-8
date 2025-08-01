@@ -13,6 +13,9 @@ function Student(name, age, enrolled, courses) {
     this.addCourse = (course) => {
         student1.courses.push(course);
     };
+    this.getTotalCourses = () => {
+        return courses.length;
+    };
 }
 
 let student1 = new Student("Mathilde", 18, true, ["Chemistry", "Management", "Analysis"]);
@@ -64,3 +67,4 @@ console.log("--------------------");
 student1.addCourse("Environmental Law & Regulations");
 student1.addCourse("Construction Administration");
 console.log(student1.courses);
+console.log(student1.getTotalCourses());
