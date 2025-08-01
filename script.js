@@ -50,3 +50,7 @@ console.log(clonedStudent1);
 
 clonedStudent1.graduationYear = 2026;
 console.log(clonedStudent1);
+
+let newCourses = ["Site Assessment", "Sampling", "Green Polices"]
+let allCourses = [...student1.courses, ...newCourses];
+console.log(allCourses);
