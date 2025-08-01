@@ -68,3 +68,14 @@ student1.addCourse("Environmental Law & Regulations");
 student1.addCourse("Construction Administration");
 console.log(student1.courses);
 console.log(student1.getTotalCourses());
+
+// Bonus Task
+function calculateAverage(array) {
+    let total = array.reduce((sum, score) => {
+        return sum + score;
+    }, 0)
+    let average = total / array.length;
+    return average;
+}
+
+console.log(calculateAverage(scoresArray));
