@@ -1,4 +1,4 @@
-// Understanding and Creating Objects
+// Part 1: Understanding and Creating Objects
 function Student(name, age, enrolled, courses) {
     this.name = name;
     this.age = age;
@@ -13,13 +13,14 @@ function Student(name, age, enrolled, courses) {
 }
 
 let student1 = new Student("Mathilde", 18, true, ["Chemistry", "Management", "Analysis"]);
-
 console.log(student1.name);
 console.log(student1.age);
 
 student1.print();
+console.log("--------------------");
 
-// Working with JSON
+
+// Part 2: Working with JSON
 let jsonStudent1 = JSON.stringify(student1);
 console.log(jsonStudent1);
 
@@ -28,8 +29,10 @@ console.log(convertedJson);
 // the converted JSON student and student1 are two different objects in the memory, hence the result would be false:
 console.log(convertedJson === student1);
 console.log(student1, convertedJson);
+console.log("--------------------");
 
-// Using Destructuring Assignment
+
+// Part 3: Using Destructuring Assignment
 let { name: studentName, courses: studentCourses } = student1;
 console.log(studentName);
 console.log(studentCourses);
@@ -38,3 +41,9 @@ let scoresArray = [50, 65, 30, 100];
 let [score1, score2] = scoresArray;
 console.log(score1);
 console.log(score2);
+console.log("--------------------");
+
+
+// Part 4: The Spread Operator
+let clonedStudent1 = { ...student1 };
+console.log(clonedStudent1);
