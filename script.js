@@ -33,3 +33,8 @@ console.log(student1, convertedJson);
 let { name: studentName, courses: studentCourses } = student1;
 console.log(studentName);
 console.log(studentCourses);
+
+let scoresArray = [50, 65, 30, 100];
+let [score1, score2] = scoresArray;
+console.log(score1);
+console.log(score2);
